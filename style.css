@@ -561,6 +561,92 @@ nav .nav-link:hover{
     }
 }
 /*Media Query For Tablet Ends*/
+/*Media Query For Phone*/
+@media only screen and (min-width:450px) {
+    .cta{
+        font-size: 2.5rem;
+        padding: 20px 60px;
+    }
+    h1.section-title{
+        font-size: 6rem;
+    }
+
+    /*Hero*/
+    #hero h1{
+        font-size: 7rem;
+    }
+    /*Hero Ends*/
+
+    /*Service*/
+    #services .service-bottom .service-item{
+        flex-basis: 45%;
+        margin: 2.5%;
+    }
+    /*Service Ends*/
+    /*Project Starts*/
+    #projects .project-item{
+        height: 400px;
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+        flex-direction: row;
+    }
+    #projects .project-item:nth-of-type(even){
+        flex-direction: row-reverse;
+    }
+
+    #projects .all-projects .project-info{
+        height: 100%;
+    }
+    #projects .all-projects .project-img{
+        height: 100%;
+    }
+    /*Project Ends*/
+
+    /*About Me Starts*/
+    #about .about{
+        flex-direction: row;
+    }
+    #about .col-left{
+        width: 600px;
+        height: 400px;
+        padding-left: 60px;
+    }
+
+    #about .col-right{
+        text-align: left;
+        padding: 30px;
+    }
+    #about .col-right h1{
+        text-align: left;
+    }
+    /*About Me Ends*/
+
+    /*Contact Starts*/
+    #contact .contact{
+        flex-direction: column;
+        padding: 100px;
+        align-items: center;
+        justify-content: center;
+        min-width: 20vh;
+        width: 100%;
+    }
+    #contact .contact-items{
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 20px;
+    }
+    #contact .contact-item .contact-info{
+        width: 100%;
+        text-align: center;
+    }
+    /*Contact Ends*/
+    #footer{
+        width:100%;
+    }
+}
 
 /*Media Query For Desktop*/
 @media only screen and(min-width:1500px){
